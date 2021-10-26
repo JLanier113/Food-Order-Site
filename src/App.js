@@ -20,8 +20,7 @@ function App() {
 
   return (
     <CartProvider>
-      {cartIsShown && <Cart onCloseCart={hideCartHandler} />} // using the &&
-      //renders this if true and doesnt //render if false
+      {cartIsShown && <Cart onCloseCart={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
       <main>
         <Meals />
